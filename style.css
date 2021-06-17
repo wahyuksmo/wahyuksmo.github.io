@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+@media (max-width: 576px) {
+  .navbar i {
+    color: rgb(55, 122, 247);
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .banner {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  .banner h3 {
+    color: rgb(51, 51, 51);
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .banner .card {
+    margin-top: 30px;
+    border-radius: 30px;
+    border: 1px solid #333;
+  }
+
+  .banner .card h5 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 20px;
+  }
+
+  .tasks {
+    margin-top: 60px;
+  }
+
+  .tasks h3 {
+    color: rgb(138, 136, 136);
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .tasks ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .tasks p {
+    font-size: 1.2em;
+    color: #333;
+  }
+
+  .tasks i {
+    font-size: 25px;
+    color: rgb(59, 144, 255);
+  }
+
+  .addTo .junk {
+    margin-left: -100%;
+  }
+
+  .addTo i {
+    font-size: 60px;
+    position: fixed;
+    margin-right: 50px;
+    bottom: 50px;
+    right: 0;
+    color: rgb(0, 140, 255);
+  }
+
+  .addTo i:hover {
+    color: rgba(105, 255, 75, 0.623);
+  }
+
+  #clear i {
+    font-size: 25px;
+    float: right;
+    margin-right: 20px;
+    margin-top: -60px;
+    color: rgb(255, 119, 78);
+  }
+}

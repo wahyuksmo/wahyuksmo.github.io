@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <section class="navbar">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <i class="fas fa-align-left"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <h3>What's Up, Dude!!!</h3>
+      <div id="count">
+        <div class="card" style="width: 18rem">
+          <div class="card-body">
+            <p class="card-text" id="countTask" style="text-align: center">This application is made to remind you of your assignments</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tasks">
+      <h3>Today's Tasks</h3>
+      <span id="clear"><i class="fas fa-ban"></i></span>
+      <div class="content">
+        <ul id="list" class="list-group list-group-flush">
+          <!-- <li class="list-group-item">
+            <i class="far fa-square" job="complete"></i>
+            <p class="text">Drink Coffe</p>
+            <i class="fas fa-trash-alt" job="delete"></i>
+          </li> -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- <i class="far fa-check-square"></i> -->
+
+    <section class="addTo">
+      <div class="add-to-do">
+        <button type="button" class="junk" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fas fa-plus-circle"></i></button>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Add Your Tasks</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <input type="text" class="form-control" id="input" placeholder="Add your tasks..." />
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-info" data-bs-dismiss="modal" style="color: white">Press Enter Please..</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
